@@ -1,0 +1,137 @@
+div.cart {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  right: 60px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  background-color: var(--white-color);
+
+  border-radius: 12px;
+  box-shadow: 0px 14px 20px 10px rgba(0, 0, 0, 0.1);
+
+  padding: 20px 0px;
+
+  min-width: 360px;
+  width: 26%;
+
+  .heading {
+    width: 100%;
+
+    font-weight: 700;
+
+    padding: 0px 20px;
+    padding-bottom: 18px;
+    border-bottom: 0.5px solid hsl(220, 14%, 85%);
+  }
+
+  .cart-items-container {
+    width: 100%;
+
+    padding: 16px 20px 8px;
+
+    .cart-items__list {
+      list-style: none;
+
+      margin-bottom: 16px;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-bottom: 8px;
+
+      color: var(--dark-grayish-blue);
+
+      .cart-item__header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .cart-item__thummbnail-container {
+        width: 55px;
+        height: 55px;
+
+        border-radius: 6px;
+        overflow: hidden;
+
+        margin-right: 12px;
+
+        img {
+          width: 100%;
+
+          object-fit: cover;
+        }
+      }
+
+      .cart-item__contents {
+        p:first-of-type {
+          padding-bottom: 6px;
+        }
+
+        span.sub-total {
+          font-weight: 700;
+
+          color: var(--black-color);
+        }
+      }
+
+      .button-container {
+        button {
+          border: none;
+          outline: none;
+
+          background-color: transparent;
+
+          cursor: pointer;
+        }
+      }
+    }
+
+    .cart-btn__checkout {
+      width: 100%;
+
+      border: none;
+      outline: none;
+      border-radius: 10px;
+
+      padding: 14px 0;
+
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+
+      background-color: var(--orange-color);
+      color: var(--white-color);
+
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  div.cart {
+    top: 90px;
+    right: 22px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  div.cart {
+    min-width: 340px;
+    width: 96%;
+
+    top: 75px;
+    left: 7.5px;
+    right: 7.5px;
+
+    z-index: 5;
+  }
+}

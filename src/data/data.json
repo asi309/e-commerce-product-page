@@ -1,0 +1,17 @@
+{"products": [{
+  "id": "product1",
+  "title": "Fall Limited Edition Sneakers",
+  "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae debitis quaerat architecto, optio maiores odio eos cum velit non id quisquam assumenda explicabo voluptates et tenetur reiciendis veritatis ad voluptatum.",
+  "offerPrice": 125.00,
+  "price": 250.00,
+  "images": []
+},
+{
+  "id": "product2",
+  "title": "Spring Limited Edition Sneakers",
+  "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae debitis quaerat architecto, optio maiores odio eos cum velit non id quisquam assumenda explicabo voluptates et tenetur reiciendis veritatis ad voluptatum.",
+  "offerPrice": 249.99,
+  "price": 399.99,
+  "images": []
+}
+], "__comments__": "In actual implementation images will be a list of urls. Here we will just use local images"}
